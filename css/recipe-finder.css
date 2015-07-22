@@ -75,6 +75,19 @@ h1, #mainContent {
 	margin-bottom: 0;
 }
 
+#results {
+	margin: 10px 0;
+}
+
+#results li {
+	margin: 20px 0;
+	clear: both;
+}
+
+#results span.thumbnail {
+	float: left;
+	margin: 0 20px 20px 0;
+}
 
 /* ==== design ==== */
 
@@ -95,6 +108,11 @@ form {
 	padding: 10px;
 }
 
+#results ul {
+	list-style-type: none;
+}
+
+
 
 /* ==== type ==== */
 
@@ -114,6 +132,18 @@ p, label {
 	margin-bottom: 0.4em;
 }
 
+#results a {
+	font-weight: bold;
+	font-size: 1.1em;
+	text-decoration: none;
+	padding-bottom: 6px;
+	color: #58bfc4;
+	display: block;
+}
+
+#results span.trailText {
+	display: block;
+}
 
 /* form elements */
 
