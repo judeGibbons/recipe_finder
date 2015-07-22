@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<link href="css/recipe-finder.css" rel="stylesheet"/>
+
+<title>Recipe finder</title>
+
+<!--<script type="text/javascript" src="js/jquery-1.11.3.js"></script>-->
+<script type="text/javascript" src="js/recipe-finder.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1><span class="logo"></span>Recipe finder</h1>
+<!-- add <img src="./images/recipe-finder.png" alt="Recipe finder logo"> when logo done -->
+</header>
+
+<div id="mainContent">
+
+<p>This form works by querying the Guardian's content API for articles which include recipes.</p>
+
+<form action="" method="get" name="recipeFinder" id="recipeFinder">
+
+<div class="formSection">
+<label for="include">Type in a list of ingredients you would like to find.</label>
+<input type="text" name="include" id="include" />
+</div>
+
+<div class="formSection">
+<label for="exclude">Type in a list of ingredients you would like to exclude.</label>
+<input type="text" name="exclude" id="exclude" />
+</div>
+
+<div class="formSection">
+<button type="submit" name="submitButton" id="submitButton">Find recipes</button>
+</div>
+
+</form>
+
+
+<div id="results"></div>
+
+
+</div>
+</body>
+</html>

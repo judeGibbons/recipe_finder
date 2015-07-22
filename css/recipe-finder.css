@@ -1,0 +1,142 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== end of reset ==== */
+
+
+
+
+/* ==== main content and layout ==== */
+
+h1 {
+	height: 60px;
+}
+
+h1, #mainContent {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#mainContent {
+	margin-top: 30px;
+}
+
+.formSection {
+	margin-bottom: 10px;
+}
+
+.formSection:last-child {
+	margin-bottom: 0;
+}
+
+
+/* ==== design ==== */
+
+header {
+	background-color: #58bfc4;
+}
+
+h1 span.logo {
+	position: relative;
+	top: 7px;
+	margin-right: 10px;
+	float: left;
+	display: none; /* remove when I have the logo */
+}
+
+form {
+	background-color: #ddf2f3;
+	padding: 10px;
+}
+
+
+/* ==== type ==== */
+
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+	font-size: 0.75em;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 30px;
+	line-height: 55px;
+	color: #fff;
+}
+
+p, label {
+	margin-bottom: 0.4em;
+}
+
+
+/* form elements */
+
+input[type=text] {
+	margin-bottom: 0.4em;
+	width: 100%;
+}
+
+button, label {
+	display: block;
+}
+
+input, textarea, select, button {
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+          box-sizing: border-box;
+}
+
+
+
+/* ==== icons and logos ==== */
+
+
+
+
+
