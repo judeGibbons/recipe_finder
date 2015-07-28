@@ -56,15 +56,16 @@ table {
 
 h1 {
 	height: 60px;
+	max-width: 20em; /* why different to mainContent now? */
 }
 
 h1, #mainContent {
-	max-width: 500px;
 	margin: 0 auto;
 }
 
 #mainContent {
 	margin-top: 30px;
+	max-width: 50em;
 }
 
 .formSection {
@@ -73,10 +74,6 @@ h1, #mainContent {
 
 .formSection:last-child {
 	margin-bottom: 0;
-}
-
-#results {
-	margin: 10px 0;
 }
 
 #results li {
@@ -89,19 +86,24 @@ h1, #mainContent {
 	margin: 0 20px 20px 0;
 }
 
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+
+
 /* ==== design ==== */
 
 header {
 	background-color: #58bfc4;
 }
 
-h1 span.logo {
-	position: relative;
-	top: 7px;
-	margin-right: 10px;
-	float: left;
-	display: none; /* remove when I have the logo */
-}
 
 form {
 	background-color: #ddf2f3;
@@ -112,6 +114,73 @@ form {
 	list-style-type: none;
 }
 
+#pagination, #results {
+	margin-top: 20px;
+}
+
+#pagination p {
+	white-space: nowrap;
+	display: inline-block;
+}
+
+.resultsNumber {
+	float: left;
+}
+
+.pageCount {
+	float: right;
+}
+
+
+#nextArrow, #previousArrow  {
+	width: 2em;
+	height: auto;
+	border: 2px solid #58bfc4;
+}
+
+#previousArrow  {
+	margin-right: 10px;
+}
+
+#nextArrow  {
+	margin-left: 10px;
+}
+
+.pageCount a {
+	text-decoration: none;
+	display: inline-block;
+	height: 100%;
+	padding: 0 0.5em;
+}
+
+#nextArrow.disabled, #previousArrow.disabled {
+	border-color: #fff;
+}
+
+#nextArrow.disabled a, #previousArrow.disabled a {
+	visibility: hidden;
+}
+
+span.a11y-hide {
+	position: absolute;
+	width: 0px;
+	right: 5000px;
+}
+
+span.a11y-disabled {
+	display: none;
+}
+
+button {
+    height: 2em;
+    width: 8em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 1;
+    background-color: #58bfc4;
+    color: white;
+}
 
 
 /* ==== type ==== */
@@ -132,20 +201,25 @@ p, label {
 	margin-bottom: 0.4em;
 }
 
-#results a {
+#results h2 {
 	font-weight: bold;
 	font-size: 1.1em;
+	position: relative;
+	top: -4px;
+}
+
+#results a {
 	text-decoration: none;
-	padding-bottom: 6px;
 	color: #58bfc4;
-	display: block;
 }
 
-#results span.trailText {
-	display: block;
+.date {
+	text-align: right;
+	font-size: 83.333333333%;
+	font-weight: bold;
 }
 
-/* form elements */
+/* ==== form elements ==== */
 
 input[type=text] {
 	margin-bottom: 0.4em;
@@ -156,16 +230,23 @@ button, label {
 	display: block;
 }
 
-input, textarea, select, button {
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
+.title, .em {
+	font-style: italic;
 }
 
+.strong {
+	font-style: bold;
+}
 
+/* ==== images ==== */
 
-/* ==== icons and logos ==== */
-
+h1 span.logo {
+	position: relative;
+	top: 7px;
+	margin-right: 10px;
+	float: left;
+	display: none; /* remove when I have the logo */
+}
 
 
 

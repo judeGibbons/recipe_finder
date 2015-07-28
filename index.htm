@@ -6,7 +6,6 @@
 
 <title>Recipe finder</title>
 
-<!--<script type="text/javascript" src="js/jquery-1.11.3.js"></script>-->
 <script type="text/javascript" src="js/recipe-finder.js"></script>
 
 </head>
@@ -20,17 +19,17 @@
 
 <div id="mainContent">
 
-<p>This form works by querying the Guardian's content API for articles which include recipes.</p>
+<p>This search form finds recipe articles from <span class="title">The Guardian</span>.</p>
 
 <form action="" method="get" name="recipeFinder" id="recipeFinder">
 
 <div class="formSection">
-<label for="include">Type in a list of ingredients you would like to find.</label>
+<label for="include">Type in a list of ingredients or words to include.</label>
 <input type="text" name="include" id="include" />
 </div>
 
 <div class="formSection">
-<label for="exclude">Type in a list of ingredients you would like to exclude.</label>
+<label for="exclude">Type in a list of ingredients or words to exclude.</label>
 <input type="text" name="exclude" id="exclude" />
 </div>
 
@@ -40,9 +39,9 @@
 
 </form>
 
+<div id="pagination" class="clearfix"></div>
 
 <div id="results"></div>
-
 
 </div>
 </body>
