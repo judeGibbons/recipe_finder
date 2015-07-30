@@ -95,6 +95,35 @@ h1, #mainContent {
     visibility: hidden;
 }
 
+/* ------>>> LESS THAN 50em <<<------ */
+
+@media only screen and (max-width: 50em), only screen and (max-device-width: 50em) {
+
+#mainContent {
+	padding: 0 10px;
+}
+
+h1 {
+	margin-left: 10px;
+}
+
+
+} /*end of media query max-width 50em */
+
+
+
+/* ------>>> LESS THAN 50em <<<------ */
+
+@media only screen and (max-width: 30em), only screen and (max-device-width: 30em) {
+
+.thumbnail {
+	display: none;
+}
+
+
+
+} /*end of media query max-width 50em */
+
 
 
 
@@ -224,6 +253,8 @@ p, label {
 input[type=text] {
 	margin-bottom: 0.4em;
 	width: 100%;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 button, label {
