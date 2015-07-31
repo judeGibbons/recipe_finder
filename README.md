@@ -8,6 +8,8 @@ Certain defaults have been chosen and hard-coded into the url string: the search
 is restricted to the Life and Style section, the number of results per page is set 
 to 20, and the sort order is newest article first.
 
+The app currently doesn't support IE9 and below.
+
 The page is live [here](http://gimaju.net/recipes/).
 
 Still to do: 
